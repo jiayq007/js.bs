@@ -17,3 +17,23 @@
     * {filename}.js {filename}.js.js -->  Command:node bs_gen.js --> {filename}.js.bs
 * 使用过程：
     *  ./node {filename}.js
+
+# js.bs is a node.js scripting language encryption module
+To provide macOS version and Linux version of the security node.js execution environment, please replace the root node program (macOS version).
+
+# Implementation principle:
+Modify the source code of node.js, compiled node can perform encrypted javascript function.
+
+# Features:
+* Node.js uses v8 as the engine for handling javascript. When loading javascript at run time, it can not be precompiled into bytecode just like java and python, but it generally uses javascript to streak the server, which brings convenience to hackers. Hundreds of thousands or even millions of project code input, in the operation and maintenance personnel accidentally or under system leaks, this code system is very fragile. Here javascript encrypted by encryption algorithm, using a safe node.js execution environment, the decryption process in the node.js kernel, making javascript very safe to be loaded into v8 memory. At the same time, the security node.js execution environment to modify the debug interface, the use of ordinary debugging parameters will not be able to open the debug, so as to ensure the security of the code.
+* In team development, some of the code to be protected is included in the encrypted javascript, which is named {filename} .js.bs. Team members only need to care about their own logic, usually without encryption javascript, the file name is {filename} .js. The secure node.js execution environment allows programming of {filename} .js.bs and {filename} .js, which makes it safe to deliver sensitive information.
+* Secure node.js execution environment support for pseudocode, which actually runs {filename} .js.bs when {filename} .js.bs and {filename} .js exist, this time {filename} .js That is {filename} .js.bs pseudocode. However, when the pseudo-code is modified, the situation has changed, the secure node.js will now execute the pseudocode {filename} .js instead of executing {filename} .js.bs.
+
+# Instructions:
+* {filename} .js.js Encrypted code
+* {filename} .js.bs Encrypted code
+* {filename} .js pseudo-code
+* Encryption process:
+    * {filename} .js {filename} .js.js -> Command: node bs_gen.js -> {filename} .js.bs
+* Use process:
+    * ./node {filename} .js
