@@ -10,7 +10,7 @@ Modify the source code of node.js, compiled node can perform encrypted javascrip
 * Secure node.js execution environment support for pseudocode, which actually runs {filename} .js.bs when {filename} .js.bs and {filename} .js exist, this time {filename} .js That is {filename} .js.bs pseudocode. However, when the pseudo-code is modified, the situation has changed, the secure node.js will now execute the pseudocode {filename} .js instead of executing {filename} .js.bs.
 
 # Instructions:
-* {filename} .js.js Encrypted code
+* {filename} .js.js Source code
 * {filename} .js.bs Encrypted code
 * {filename} .js pseudo-code
 * Encryption process:
@@ -30,7 +30,7 @@ Modify the source code of node.js, compiled node can perform encrypted javascrip
 * 安全的node.js执行环境对伪代码支持，当{filename}.js.bs和{filename}.js同时存在时，实际上会运行{filename}.js.bs，这时候{filename}.js即为{filename}.js.bs的伪代码。但是，当伪代码被修改后，情况发生了变化，安全的node.js这时候会执行伪代码{filename}.js而不是执行{filename}.js.bs。
 
 # 使用方法：
-* {filename}.js.js	被加密代码
+* {filename}.js.js	源代码
 * {filename}.js.bs	加密后代码
 * {filename}.js		伪代码
 * 加密过程：
