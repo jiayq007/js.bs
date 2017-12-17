@@ -14,9 +14,9 @@ Modify the source code of node.js, compiled node can perform encrypted javascrip
 * {filename} .js.bs Encrypted code
 * {filename} .js pseudo-code
 * Encryption process:
-    * {filename} .js {filename} .js.js -> Command: node bs_gen.js -> {filename} .js.bs
+    * {filename} .js {filename} .js.js -> Command: node bs_gen.js -> {filename} .js.bs
 * Use process:
-    * ./node {filename} .js
+    * ./node {filename} .js
 
 # js.bs 是一种node.js脚本语言加密模块
 提供macOS版本和Linux版本安全的node.js执行环境，请自行替换根目录node程序（macOS版本）。
