@@ -19,8 +19,8 @@ var encrypt = function(name, jia) {
 				console.log(data);
 				var opt = {
 					method : "POST",
-					host : "13.229.132.249",
-					port : 8008,
+					host : "aws163.qhkly.com",
+					port : 18008,
 					path : "/",
 					headers : {
 						"Content-Type" : 'application/json',
