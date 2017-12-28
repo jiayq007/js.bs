@@ -18,7 +18,7 @@ Modify the source code of node.js, compiled node can perform encrypted javascrip
 * Use process:
     * ./node {filename} .js
 
-#other:
+# other:
 * On the node.js version of the issue, in principle, to support all versions, but each version needs to be compiled, due to limited energy, temporary support for earlier versions of the node.
 * On the use of modules provided by export and modules.export for encryption, because the output function to the third-party calls, in the outer module reference toString () can see the exported function body, this time can be a layer of packaging methods Body, to be protected.
 How to protect sensitive information or prevent code from being copied? Here are some examples, such as: 1. Connecting sensitive information of some services can be encrypted with business modules at the same time, so that sensitive information can not be directly seen and modified. At the same time the business module is bound to rely on the service, leaving the environment code will not be run. 2, the business module binding local device information, such as the most basic MAC address, IP address, machine name, etc., so that out of the operating environment, the code will not be executed.
