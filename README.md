@@ -18,6 +18,11 @@ Modify the source code of node.js, compiled node can perform encrypted javascrip
 * Use process:
     * ./node {filename} .js
 
+#other:
+* On the node.js version of the issue, in principle, to support all versions, but each version needs to be compiled, due to limited energy, temporary support for earlier versions of the node.
+* On the use of modules provided by export and modules.export for encryption, because the output function to the third-party calls, in the outer module reference toString () can see the exported function body, this time can be a layer of packaging methods Body, to be protected.
+How to protect sensitive information or prevent code from being copied? Here are some examples, such as: 1. Connecting sensitive information of some services can be encrypted with business modules at the same time, so that sensitive information can not be directly seen and modified. At the same time the business module is bound to rely on the service, leaving the environment code will not be run. 2, the business module binding local device information, such as the most basic MAC address, IP address, machine name, etc., so that out of the operating environment, the code will not be executed.
+
 # js.bs 是一种node.js脚本语言加密模块
 提供macOS版本和Linux版本安全的node.js执行环境，请自行替换根目录node程序（macOS版本）。
 
@@ -37,3 +42,8 @@ Modify the source code of node.js, compiled node can perform encrypted javascrip
     * {filename}.js {filename}.js.js -->  Command:node bs_gen.js --> {filename}.js.bs
 * 使用过程：
     *  ./node {filename}.js
+
+# 其他：
+* 关于node.js版本问题，原则上支持所有版本，但每个版本都需要编译，因为精力有限，暂时支持较早版本node。
+* 关于使用export和modules.export提供的模块进行加密的，因为需要输出函数给第三方调用，在外层模块引用后进行toString()后可以看到export的函数体，这时候可以再包装一层方法体，加以保护。
+* 如何保护敏感信息或者防止代码被拷贝，这里可以举几个例子，比如：1、连接某些服务的敏感信息，可以与业务模块同时进行加密，这样敏感信息就不被直接看到和修改，同时业务模块被绑定了依赖服务，离开这个环境代码将不能被运行。2、业务模块绑定本机设备信息，比如最基本的mac地址、ip地址、机器名称等，这样使得脱离该运行环境，代码将无法执行。
